@@ -71,8 +71,9 @@ def extract_class_id_from_filename(filename):
 
 # 전처리 폴더 경로 설정
 crop_folder = 'cropped_image'
-image_path = 'seonghyeon_dogs/dog10 (1).jpg'  # 전처리할 이미지 경로
-class_id = 10
+class_id = 11
 
-# 이미지 전처리 수행
-processed_image_path = process_single_image(image_path, crop_folder, class_id)
+
+for i in range(1,8):
+    image_path = f'seonghyeon_dogs/img/dog11 ({i}).jpg'
+    processed_image_path = process_single_image(image_path, crop_folder, class_id)
